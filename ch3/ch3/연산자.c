@@ -81,5 +81,45 @@
 //	}
 //	return 0;
 //}//피라미드
+// 피라미드는 원리를 한 줄씩 볼 것을 추천함
+
+//int main(void) {
+//	for (int i = 0; i < 5; i++) {
+//		for (int j = i; j <= 4-1; j++) {
+//			printf("S");//공백출력 printf(" ")
+//		}
+//		for (int k = 0; k <= i; k++) {
+//			printf("*");
+//		}
+//		printf("\n");
+//	}
+//}//표를 그려볼 것
 
 
+//int main(void) {
+//	int floor;
+//
+//	printf("몇 층으로 쌓겠습니까?(5~100): ");
+//	scanf_s("%d", &floor);
+//	
+//	for (int i = 0; i < floor; i++) {
+//		for (int j = i; j < floor - 1; j++) {
+//			printf(" ");
+//		}
+//		for (int k = 0; k < i*2 + 1; k++) {
+//			printf("*");
+//		}
+//		printf("\n");
+//	}
+//	return 0;
+//}//project
+
+//int main(void) {
+//	for (int i = 5; i > 0; i--) {
+//		for (int j = i; j > 0; j--) {
+//			printf("*");
+//		}
+//		printf("\n");
+//	}
+//	return 0;
+//}
