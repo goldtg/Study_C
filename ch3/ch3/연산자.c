@@ -71,13 +71,15 @@
 //	return 0;
 //} //구구단 만들기
 
-int main(void) {
-	for (int i = 0; i < 5; i++) {
-		for (int j = 0; j <= i; j++) {
-			printf("*");
-		}
-		printf("\n");
-		
-	}
-	return 0;
-}
+//int main(void) {
+//	for (int i = 0; i < 5; i++) {
+//		for (int j = 0; j <= i; j++) {
+//			printf("*");
+//		}
+//		printf("\n");
+//		
+//	}
+//	return 0;
+//}//피라미드
+
+
