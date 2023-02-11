@@ -132,4 +132,4 @@ int main(void) {
 		default:
 			printf("¸ğÇÏ³ë\n");
 	}
-}
+}//2023-02-11
