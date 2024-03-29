@@ -27,21 +27,21 @@
 //	return 0;
 //}
 
-int main(void) {
-	char szBuffer[16] = { "Hello" };
-	char* pszData = szBuffer;
-	int nLength = 0;
-
-	while (*pszData !='\0')
-	{
-		pszData++;
-		nLength++;
-	}
-	//char 크기 만큼씩 이동함
-	//포인터 주소는 첫 글자의 주소만 가지고 있기 때문 + char(1byte)크기만큼 움직이는 것으로 length 변수로 5로 만듦 
-
-	printf("Length : %d\n", nLength);
-	printf("Length : %d\n", strlen(szBuffer));
-	printf("Length : %d\n", strlen("World"));
-	return 0;
-}
+//int main(void) {
+//	char szBuffer[16] = { "Hello" };
+//	char* pszData = szBuffer;
+//	int nLength = 0;
+//
+//	while (*pszData !='\0')
+//	{
+//		pszData++;
+//		nLength++;
+//	}
+//	//char 크기 만큼씩 이동함
+//	//포인터 주소는 첫 글자의 주소만 가지고 있기 때문 + char(1byte)크기만큼 움직이는 것으로 length 변수로 5로 만듦 
+//
+//	printf("Length : %d\n", nLength);
+//	printf("Length : %d\n", strlen(szBuffer));
+//	printf("Length : %d\n", strlen("World"));
+//	return 0;
+//}
