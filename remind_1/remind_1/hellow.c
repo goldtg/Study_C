@@ -232,37 +232,55 @@
 //
 //}
 
+//int main(void) {
+//	int fee = 1000, age = 0;
+//
+//	printf("나이를 입력해주세요: ");
+//	scanf_s("%d", &age);
+//
+//	
+//
+//	if (age <= 13) {
+//		if (age < 4) {
+//			fee = 0;
+//		}
+//		else {
+//			fee = fee * 0.5;
+//		}
+//	}
+//	else {
+//		if (age < 20) {
+//			
+//			fee = fee * 0.75;
+//		}
+//
+//		else {
+//			fee = fee;
+//		}
+//	}
+//
+//	printf("당신의 나이는 %d 요금은 %d", age, fee);
+//
+//}
+
+//while remind
 int main(void) {
-	int fee = 1000, age = 0;
+	int nInput = 0, user = 0;
+	printf("숫자 입력: ");
+	scanf_s("%d", &nInput);
+	if (nInput < 1) nInput = 1;
+	if (nInput > 9) nInput = 9;
 
-	printf("나이를 입력해주세요: ");
-	scanf_s("%d", &age);
-
-	
-
-	if (age <= 13) {
-		if (age < 4) {
-			fee = 0;
+	while (user < nInput) {
+		putchar('*');
+		if (user == nInput - 1) {
+			printf("\n");
 		}
-		else {
-			fee = fee * 0.5;
-		}
-	}
-	else {
-		if (age < 20) {
-			
-			fee = fee * 0.75;
-		}
-
-		else {
-			fee = fee;
-		}
+		user++;
 	}
 
-	printf("당신의 나이는 %d 요금은 %d", age, fee);
-
+	return 0;
 }
-
 
 
 
