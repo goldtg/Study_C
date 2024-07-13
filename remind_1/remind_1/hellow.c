@@ -264,22 +264,68 @@
 //}
 
 //while remind
+//int main(void) {
+//	int nInput = 0, user = 0;
+//	printf("숫자 입력: ");
+//	scanf_s("%d", &nInput);
+//	if (nInput < 1) nInput = 1;
+//	if (nInput > 9) nInput = 9;
+//
+//	while (user < nInput) {
+//		putchar('*');
+//		if (user == nInput - 1) {
+//			printf("\n");
+//		}
+//		user++;
+//	}
+//
+//	return 0;
+//}
+
+// 구구단
+//int main(void) {
+//	for (int i = 1; i < 10; i++) {
+//		for (int j = 1; j < 10; j++) {
+//			printf("%d x %d = %d", i, j, i * j);
+//			putchar('\n');
+//		}
+//	}
+//}
+
+//총합
+//int main(void) {
+//	int max = 0;
+//	for (int i = 1; i < 11; ++i) {
+//		max += i;
+//	}
+//	printf("%d", max);
+//
+//
+//}
+
+//for remind	
+//int main(void) {
+//	for (int i = 0; i < 5; ++i) {
+//		for (int j = 0; j <= i; ++j) {
+//			printf("*\t");
+//		}
+//		putchar('\n');
+//	}
+//}
+
+//for 활용
 int main(void) {
-	int nInput = 0, user = 0;
-	printf("숫자 입력: ");
-	scanf_s("%d", &nInput);
-	if (nInput < 1) nInput = 1;
-	if (nInput > 9) nInput = 9;
+	for (int i = 0; i < 5; ++i) {
 
-	while (user < nInput) {
-		putchar('*');
-		if (user == nInput - 1) {
-			printf("\n");
+		for (int j = 5; j > i; j--) {
+			printf(" ");
 		}
-		user++;
-	}
 
-	return 0;
+		for (int k = 0; k <= i; k++) {
+			printf("*");
+		}
+		printf("\n");
+	}
 }
 
 
