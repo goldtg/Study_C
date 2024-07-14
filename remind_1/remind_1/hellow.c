@@ -342,6 +342,70 @@
 //	}
 //}
 
+//배열 최댓값 구하기
+//int main(void) {
+//	int nList[5] = { 50, 40, 10, 60, 20 };
+//	int nMax = 0;
+//	
+//	for (int i = 0; i < 5; i++) {
+//		if (nMax < nList[i]) {
+//			nMax = nList[i];
+//		}
+//		
+//	}
+//	printf("%d", nMax);
+//
+//	return 0;
+//}
+
+//버블 정렬
+//int main(void) {
+//	int nList[5] = { 50, 40, 10, 60, 0 };
+//
+//	for (int i = 0; i < 5; i++) {
+//
+//		for (int j = i+1; j < 5; j++) {
+//			if (nList[i] > nList[j]) {
+//				int n = nList[i];
+//				nList[i] = nList[j];
+//				nList[j] = n;
+//			}
+//		}
+//	}
+//	
+//	for (int k = 0; k < 5; k++) {
+//		printf("%d \t", nList[k]);
+//	}
+//
+//	return 0;
+//}
+
+//선택정렬
+//int main(void) {
+//	int nList[5] = { 50, 40, 10, 60, 20 };
+//	int minInx = 0;
+//
+//	for (int i = 0; i < 5; i++) {
+//
+//		for (int j = i+1; j < 5; j++) {
+//			if (nList[minInx] > nList[j]) {
+//				minInx = j;
+//			}
+//		}
+//		
+//		if(minInx != i){
+//			int tmp = nList[i];
+//			nList[i] = nList[minInx];
+//			nList[minInx] = tmp;
+//		}
+//
+//		for (int i = 0; i < 5; i++) {
+//			printf("%d\t", nList[i]);
+//		}
+//		printf("\n");
+//		
+//	}
+//}
 
 
 
