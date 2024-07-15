@@ -440,26 +440,80 @@
 //	}
 //}
 
+//배열 순서대로 찍기
+//int main(void) {
+//	int aList[5][5] = { 0 };
+//	int aMax = 1;
+//	for (int i = 0; i < 5; i++) {
+//		for (int j = 0; j < 5; j++) {
+//			aList[i][j] = aMax;
+//			aMax++;
+//		}
+//	}
+//	for (int i = 0; i < 5; i++) {
+//		for (int j = 0; j < 5; j++) {
+//			printf("%d\t", aList[i][j]);
+//		}
+//		putchar('\n');
+//	}
+//
+//}
+
+//배열 교차
+//int main(void) {
+//	int aList[5][5] = { 0 };
+//	int cnt = 0;
+//
+//	for (int i = 0; i < 5; i++) {
+//		if (i % 2 == 0) {
+//			for (int j = 0; j < 5; j++) {
+//				aList[i][j] = ++cnt;
+//			}
+//		}
+//		else {
+//			for (int k = 4; k >= 0; k--) {
+//				aList[i][k] = ++cnt;
+//			}
+//		}
+//	}
+//
+//	for (int i = 0; i < 5; i++) {
+//		for (int j = 0; j < 5; j++) {
+//			printf("%d \t", aList[i][j]);
+//		}
+//		putchar('\n');
+//	}
+//}
+
+//달팽이 배열
 int main(void) {
 	int aList[5][5] = { 0 };
-	int aMax = 1;
+	int cnt = 0, env = 9;
+	int flag = 1;
+	int idx = 0;
+
 	for (int i = 0; i < 5; i++) {
-		for (int j = 0; j < 5; j++) {
-			aList[i][j] = aMax;
-			aMax++;
+		for (int j = 0; j <= env; j++) {
+			aList[i][j] = ++cnt;
+			if (j == (env / 2)) {
+				aList[j][i] = ++cnt;
+			}
 		}
+
 	}
+	
+
+
+	
+
+	//출력
 	for (int i = 0; i < 5; i++) {
 		for (int j = 0; j < 5; j++) {
 			printf("%d\t", aList[i][j]);
 		}
 		putchar('\n');
 	}
-
 }
-
-
-
 
 
 
