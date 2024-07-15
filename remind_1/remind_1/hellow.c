@@ -488,24 +488,22 @@
 //달팽이 배열
 int main(void) {
 	int aList[5][5] = { 0 };
-	int cnt = 0, env = 9;
-	int flag = 1;
-	int idx = 0;
+	int x = -1, y = 0, nDic=1;//좌표 및 좌표 이동 변수 정의, x가 반복문에서 1을 넣고 시작하기 때문에 -1부터 시작해야함
+	int cnt = 0 ,env =9;
 
-	for (int i = 0; i < 5; i++) {
-		for (int j = 0; j <= env; j++) {
-			aList[i][j] = ++cnt;
-			if (j == (env / 2)) {
-				aList[j][i] = ++cnt;
+	for (int env = 9; env > 0; env -= 2) {//큰 사이클을 정의하는 반복문
+		for (int i = 0; i < env; i++) {
+			if (i < (env / 2) + 1) { // env 보다 i가 작을 때 x좌표를 수정함
+				x += nDic;
 			}
+			else {// env보다 i가 커지면 y좌표를 수정함
+				y += nDic;
+			}
+			aList[y][x] = ++cnt; //수정한 좌표의 값을 넣는 코드
 		}
-
+		nDic = -nDic; //증가했다가 감소하는 규칙 때문에 -1로 바꿔주는 작업이 필요함
 	}
 	
-
-
-	
-
 	//출력
 	for (int i = 0; i < 5; i++) {
 		for (int j = 0; j < 5; j++) {
@@ -513,6 +511,7 @@ int main(void) {
 		}
 		putchar('\n');
 	}
+	return 0;
 }
 
 
