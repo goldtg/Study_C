@@ -407,7 +407,40 @@
 //	}
 //}
 
+int main(void) {
+	int aList[3][4] = {
+		{ 10, 20, 30 },
+		{ 40, 50 ,60 }
+	};
+	int nMax = 0;
 
+
+	for (int i = 0; i < 2; i++) {
+		for (int j = 0; j < 3; j++) {
+			nMax += aList[i][j];
+		}
+		aList[i][3] = nMax;
+	}
+
+	for (int i = 0; i < 4; i++) {
+		int aMax = 0;
+		for (int j = 0; j < 3; j++) {
+			aMax += aList[j][i];
+		}
+		aList[2][i] = aMax;
+	}
+	
+
+
+
+	//Ãâ·Â
+	for (int i = 0; i < 3; i++) {
+		for (int j = 0; j < 4; j++) {
+			printf("%d\t", aList[i][j]);
+		}
+		putchar('\n');
+	}
+}
 
 
 
