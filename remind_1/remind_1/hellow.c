@@ -548,10 +548,32 @@
 //
 //}
 
+//포인터 기본 예제
+//int main(void) {
+//	int aList[5] = { 0 };
+//	int* pnData = aList;
+//
+//	//*pnData = 20;
+//	printf("aList: %d\n", aList[0]);
+//	printf("pndata[0]: %d\n", pnData[0]);
+//	return 0;
+//}
 
-
-
-
+//포인터를 활용한 문자열 길이 측정 예제
+//int main(void) {
+//	char szBuffer[16] = { "Hello" };
+//	char* pszData = szBuffer;
+//	
+//
+//	while (*pszData != '\0')
+//		pszData++;
+//
+//	printf("&pszData : %p, &szBuffer: %p \n", pszData, szBuffer);
+//	printf("Length: %d\n", pszData - szBuffer);
+//	return 0;
+//}
+//
+//
 
 
 
