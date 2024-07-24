@@ -42,3 +42,26 @@
 //
 //}
 
+//MyStrcpy함수 작성
+//int MyStrcpy(b, a, c);
+//int main(void) {
+//	char szBufferSrc[12] = { "TesxString" };
+//	char szBufferDst[12] = { 0 };
+//
+//	MyStrcpy(szBufferDst, sizeof(szBufferDst), szBufferSrc);
+//	puts(szBufferDst);
+//
+//	return 0;
+//}
+//
+//int MyStrcpy(char* b, int a, char* c) {
+//	int str_arr[12] = { 0 };
+//
+//	for (int i = 0; i < a; i++) {
+//		b[i] = c[i];
+//	}
+//
+//	return b;
+//	//c에 대해서 strlen함수로 먼저 확인을 해보는 과정이 있어야 한다.
+//	//c에 크기가 b의 크기보다 큰 경우도 있을텐데 그 경우에 대해서 생각해보는 코드가 없음 -> 오류를 반환
+//}
