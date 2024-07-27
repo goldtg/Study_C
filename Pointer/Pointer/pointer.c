@@ -65,3 +65,23 @@
 //	//c에 대해서 strlen함수로 먼저 확인을 해보는 과정이 있어야 한다.
 //	//c에 크기가 b의 크기보다 큰 경우도 있을텐데 그 경우에 대해서 생각해보는 코드가 없음 -> 오류를 반환
 //}
+
+//스택 재귀호출
+
+//void PutData(char* pszParm) {
+//	
+//	if (*pszParm == '\0') {
+//		return;
+//	}
+//	
+//	putchar(*pszParm);
+//	PutData(pszParm + 1);
+//	
+//
+//}
+//int main(void) {
+//
+//	PutData("TestData");
+//	putchar('\n');
+//	return 0;
+//}
