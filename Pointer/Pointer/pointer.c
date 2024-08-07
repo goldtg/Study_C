@@ -85,3 +85,31 @@
 //	putchar('\n');
 //	return 0;
 //}
+
+//재귀함수 변형전
+//int GetFactorial(int nParam) {
+//	int nResult = 0;
+//	if (nParam == 1) return 1;
+//	
+//	nResult = nParam * GetFactorial(nParam - 1);
+//	return nResult;
+//
+//}
+//
+//int main(void) {
+//	printf("5! == %d\n", GetFactorial(5));
+//	return 0;
+//}
+
+//재귀함수 반복문 변형
+
+int main(void) {
+	int nResult = 1;
+	for (int i = 1; i <= 5; i++) {
+		
+		nResult = nResult * i;
+		printf("%d\n", nResult);
+		
+	}
+	return 0;
+}
